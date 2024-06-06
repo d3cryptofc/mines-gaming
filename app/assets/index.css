@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&display=swap');
+
+:root {
+    --bg-dark-0: #0b0b0e;
+    --bg-dark-1: #17171e;
+    --bg-dark-2: #2b2b3a;
+
+    --board-gap-size: 4px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+   height: 100%;
+   min-height: 580px;
+}
+
+body {
+    user-select: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #AAA;
+    font-family: Orbitron, monospace;
+}
+
+.bg-dark-0 {background: var(--bg-dark-0)}
+.bg-dark-1 {background: var(--bg-dark-1)}
+
+.board {
+    gap: var(--board-gap-size);
+    display: flex;
+    flex-direction: column;
+}
+
+.row {
+    display: flex; 
+    gap: var(--board-gap-size);
+}
+
+.square {
+    background-color: var(--bg-dark-1);
+    width: 40px;
+    height: 40px;
+    border-radius: 3px;
+    cursor: default;
+    font-size: 20px;
+    text-align: center;
+    line-height: 40px;
+}
+
+body:not(.stopped) .board .square:not(.opened):hover {
+    background-color: var(--bg-dark-2);
+    cursor: pointer;
+}
+
+.square.opened {
+    background-color: transparent;
+}
+
+.square .gem {color: #0076bf}
+.square .bomb {color: #ff3d3d}
+
+
+.btn {
+    padding: 8px;
+    min-width: 55px;
+    font-size: 12px;
+    border: none;
+    border-radius: 3px;
+    filter: brightness(0.9);
+    border: solid 2px #AAA;
+    background-color: transparent;
+    color: #AAA;
+}
+
+.btn:hover {
+    filter: brightness(1.6);
+    cursor: pointer;
+}
+
+@keyframes attention {
+    from {transform: scale(1)}
+    to {transform: scale(1.1)}
+}
+
+#play {
+    border-color: rgb(66, 255, 66);
+    color: rgb(111, 255, 111);
+    animation: attention infinite alternate-reverse 0.5s;
+}
+body:not(.stopped) #play {
+    display: none;
+}
+
+#stop {
+    border-color: rgb(255, 55, 55);
+    color: rgb(250, 94, 94);
+    animation: attention infinite alternate-reverse 0.5s;
+    display: none;
+}
+body:not(.stopped) #stop {
+    display: block;
+}
+
+.control-area {
+    margin-top: 10px;
+}
