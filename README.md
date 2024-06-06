@@ -36,5 +36,5 @@
   Build the image yourself (advanced users):
   ```
   docker build -t d3cryptofc/mines .
-  docker run -p 8000:8000 d3cryptofc/mines:1.0.0
+  docker run -p 8000:8000 d3cryptofc/mines
   ```
