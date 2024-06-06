@@ -1,0 +1,16 @@
+[tool.poetry]
+name = "app"
+version = "0.1.0"
+description = "A simple mines game, but a little bit different."
+authors = ["Lelzin λ <d3cryptofc@gmail.com>"]
+
+[tool.poetry.dependencies]
+python = "^3.11"
+flask = "^3.0.3"
+gunicorn = "^22.0.0"
+gevent = "^24.2.1"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
