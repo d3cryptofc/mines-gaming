@@ -1,9 +1,14 @@
 <p align="center">
-  <b>💣 Mines 💣</b>
+  <b>💎 Mines Gaming 💎</b>
   <br>
   A simple mines game, but a little bit different.
   <br><br>
-  <img src="https://i.imgur.com/ye0mu6y.gif" width="500">
+  <img src="https://img.shields.io/badge/Python%203.11-282C34?style=flat-square&logo=python&logoColor=61DAFB">
+  <img src="https://img.shields.io/badge/Flask-282C34?style=flat-square&logo=flask&logoColor=61DAFB">
+  <img src="https://img.shields.io/badge/Docker%20(optional)-282C34?style=flat-square&logo=docker&logoColor=61DAFB">
+  <br><br>
+  <img src="https://i.imgur.com/HVDKlsq.png" width="400">
+  <img src="https://i.imgur.com/WFvPbMn.png" width="400">
 </p>
 
 ---
